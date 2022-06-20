@@ -5,7 +5,7 @@ Flask | Flask RESTFUL
 API where you can create people and activities and assign activities to people, saving data in SQLITE via sqlalchemy
 <br />
 
-## Rodando o projeto
+## Running the project
 ```
 # clone the project
 git clone https://github.com/JhonataAugust0/atividades_api.git
