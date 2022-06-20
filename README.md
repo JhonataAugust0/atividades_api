@@ -1,31 +1,31 @@
-# atividades_api
+# api_activities
 Flask | Flask RESTFUL 
 <br />
  ## :bookmark: Resume
-API na qual é possível criar pessoas e atividades e atribuir atividades para as pessoas, salvando os dados no SQLITE via sqlalchemy
+API where you can create people and activities and assign activities to people, saving data in SQLITE via sqlalchemy
 <br />
 
 ## Rodando o projeto
 ```
-# Clone o projeto
+# clone the project
 git clone https://github.com/JhonataAugust0/atividades_api.git
-# Navegue até o repositório
+# Navigate to the repository
 cd atividades_api
-# Instale as dependências
+# install the dependencies
 pip install -r requirements.txt
-# Rode o projeto 
+# run the project
 python app.py
 ```
 ```
-# Execute as requisições GET, POST, PUT e DELETE de acordo com as rotas definidas seguindo o padrão abaixo:
+# Execute GET, POST, PUT and DELETE requests according to the defined routes following the pattern below:
 {
-    "nome": "Desenvolver CRUD",
+    "nome": "Develop CRUDD",
     "pessoa": "Adalberto"
 }
-# Para atividades
+# for activities
 {
     "nome": "Adalberto",
     "idade": 23
 }
-# Para pessoas
+# For people
 ```
