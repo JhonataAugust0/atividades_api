@@ -1,7 +1,7 @@
 from django import db
 from models import Pessoa
 
-
+# Métodos auxiliares da tabelas Pessoa
 def insert_pessoa():
   pessoa = Pessoa(nome='Adalberto', idade=35)
   pessoa.save_pessoa()

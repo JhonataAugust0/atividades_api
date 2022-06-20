@@ -10,6 +10,8 @@ Base = declarative_base()
 Base.query = db_session.query_property()
 
 class Pessoa(Base):
+  """Criação da arquitetura da tabela com seus dados e méto-
+  dos."""
   __tablename__ = 'Pessoa'
   id = Column(Integer, primary_key=True)
   nome = Column(String(40), index=True)
@@ -17,7 +19,6 @@ class Pessoa(Base):
 
   def __repr__(self):
     return (f'<Pessoa {self.nome}>')
-
 
   def save_pessoa(self):
     db_session.add(self)
@@ -30,6 +31,8 @@ class Pessoa(Base):
     return print('Deleted successfully')
 
 class Atividades(Base):
+  """Criação da tabela de atividades contendo seus dados ne-
+  cessários."""
   __tablename__ = 'Atividades'
   id = Column(Integer, primary_key=True)
   nome = Column(String(80))

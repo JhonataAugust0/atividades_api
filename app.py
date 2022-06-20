@@ -7,6 +7,7 @@ api = Api(app)
 
 
 class Pessoas(Resource):
+  """Criação do App Flask e definição dos métodos HTTP."""
   def get(self, nome):
     pessoa = Pessoa.query.filter_by(nome=nome).first()
     try:
